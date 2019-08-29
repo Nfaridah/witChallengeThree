@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Birth Year</title>
+</head>
+<body style>
+         <div>
+             <header id="heading"><h4>Age Group Test</h4></header>
+             <p>Input your birth year</p>
+             <button onclick="ageGroup()">
+                Enter Your Birth Year
+            </button>
+            <p id="age"></p>
+
+            <script>
+                function ageGroup(){
+                    var year = prompt ("Enter your Birth Year", 2019)
+                    if (year>2002){
+                        document.getElementById("age").innerHTML = "User is a minor"
+                    }
+                    else if (year<1989){
+                        document.getElementById("age").innerHTML = "User is an Elder"
+                    }
+                    else{
+                        document.getElementById("age").innerHTML = "User is a youth"
+                    }   
+                }
+            </script>
+         </div>   
+</body>
+</html>
